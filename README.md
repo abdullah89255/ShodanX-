@@ -6,7 +6,7 @@ The errors suggest that the `shodanx` tool may not use `--name` as an option or 
 
 ---
 
-### **Step 1: Check Command Options**
+### Check Command Options**
 
 Run the following command to display the correct usage and available options for the `domain` and `subdomain` modules:
 
@@ -17,52 +17,6 @@ shodanx domain --help
 ```bash
 shodanx subdomain --help
 ```
-
----
-
-### **Step 2: Likely Correct Syntax**
-
-If `--name` is not recognized, the tool might expect the domain as a positional argument instead of an option. Try the following:
-
-1. **For Domain Information:**
-
-   ```bash
-   shodanx domain nasa.gov
-   ```
-
-2. **For Subdomain Enumeration:**
-
-   ```bash
-   shodanx subdomain nasa.gov
-   ```
-
----
-
-### **Step 3: Update or Debug ShodanX**
-
-If the commands still fail:
-
-1. **Ensure You Have the Latest Version of ShodanX:**
-
-   ```bash
-   pip install --upgrade git+https://github.com/RevoltSecurities/ShodanX.git
-   ```
-
-2. **Inspect the Installed Version:**
-   Confirm the version to check for potential differences in syntax:
-
-   ```bash
-   shodanx --version
-   ```
-
-3. **Check the Documentation:**
-   Consult the [ShodanX GitHub repository](https://github.com/RevoltSecurities/ShodanX) for updated instructions or syntax.
-
----
-
-### **Let Me Know the Output**
-
-Share the output of `shodanx domain --help` or `shodanx subdomain --help` so I can provide more tailored guidance!
 
 ---
 
