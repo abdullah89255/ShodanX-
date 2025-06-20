@@ -11,7 +11,7 @@ The errors suggest that the `shodanx` tool may not use `--name` as an option or 
 Run the following command to display the correct usage and available options for the `domain` and `subdomain` modules:
 
 ```bash
-shodanx domain --help
+pip install git+https://github.com/RevoltSecurities/ShodanX --break-system-packages
 ```
 
 ```bash
